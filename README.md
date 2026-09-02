@@ -51,7 +51,7 @@ La segmentación identifica dos grupos que concentran más del 87% de la producc
 ## Estructura del repositorio
 
 ```
-├── Examen\\\\\\\_Parcial\\\\\\\_copy.ipynb   # Notebook con preprocesamiento, clustering y perfiles
+├── Segmentacion_script.ipynb   # Notebook con preprocesamiento, clustering y perfiles
 ├── data/                        # Dataset utilizado (Pedregal, Piura)
 └── README.md
 ```
@@ -59,10 +59,10 @@ La segmentación identifica dos grupos que concentran más del 87% de la producc
 ## Cómo ejecutarlo
 
 ```bash
-git clone https://github.com/Stefanolm/\\\\\\\[nombre-del-repo].git
+git clone https://github.com/Stefanolm/worker-productivity-clustering.git
 cd \\\\\\\[nombre-del-repo]
 pip install -r requirements.txt   # pandas, numpy, scikit-learn, seaborn, matplotlib
-jupyter notebook Examen\\\\\\\_Parcial\\\\\\\_copy.ipynb
+jupyter notebook Segmentacion_script.ipynb
 ```
 
 ## Herramientas utilizadas
