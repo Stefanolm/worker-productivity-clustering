@@ -4,7 +4,7 @@
 
 Segmentación no supervisada de operarios de campo de una empresa agroexportadora (fundos en Piura), a partir de variables de productividad, comportamiento laboral y perfil sociodemográfico, con el objetivo de identificar perfiles de desempeño y apoyar decisiones de retención de personal.
 
-**Curso:** Aprendizaje Estadístico — Universidad Nacional de Ingeniería (UNI)
+**Autor:** Stefano Giacomo Landa Morante — Universidad Nacional de Ingeniería (UNI)
 
 ## Datos y variables
 
