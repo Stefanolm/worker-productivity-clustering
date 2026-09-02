@@ -2,20 +2,30 @@
 
 Segmentación no supervisada de operarios de campo de una empresa agroexportadora (fundos en Piura), a partir de variables de productividad, comportamiento laboral y perfil sociodemográfico, con el objetivo de identificar perfiles de desempeño y apoyar decisiones de retención de personal.
 
-Curso: Aprendizaje Estadístico — Universidad Nacional de Ingeniería (UNI)
+Autor: Stefano Giacomo Landa Morante — Universidad Nacional de Ingeniería (UNI)
 
 Datos y variables
 Unidad de análisis: operarios (trabajadores de campo)
+
 Variables utilizadas: número de campañas trabajadas, edad, número de hijos, nivel de pobreza, productividad per cápita (log), días trabajados en la empresa (log), ingreso total (log) y sexo
+
 Imputación: valores faltantes en distancia al fundo, edad y número de hijos de asistentes imputados con KNN Imputer (k=5)
 Estandarización: variables continuas escaladas con StandardScaler antes del clustering
-Metodología
+
+
+Metodología:
+
 Preprocesamiento: imputación KNN de valores faltantes, transformación logarítmica de variables con alta dispersión (productividad, días trabajados, ingreso total) y estandarización Z.
+
 Selección del número de clusters: método del codo (evolución de la inercia intra-cluster) evaluando de 1 a 15 clusters.
 Modelo final: K-Means con k=4, n_init=20, random_state=123.
+
 Validación: comparación de K-Means contra Gaussian Mixture Model (GMM) usando Silhouette Score, Davies-Bouldin Score y Calinski-Harabasz Score.
+
 Visualización: proyección de los clusters en 3 componentes principales (PCA) para inspección visual de la separación entre grupos.
-Resultados del modelo
+
+
+Resultados del modelo:
 Métrica	K-Means	GMM
 Silhouette Score	0.1482	0.0383
 Davies-Bouldin	1.8740	4.2177
@@ -23,7 +33,7 @@ Calinski-Harabasz	4019.2	1920.1
 
 Las tres métricas coinciden en que K-Means produce una estructura de clusters más clara y mejor separada que GMM, lo que sugiere que los grupos tienen una forma compacta cercana al supuesto esférico de K-Means.
 
-Perfiles identificados
+Perfiles identificados:
 Cluster	Perfil	% operarios	Productividad (jabas/hora)	% de producción generada
 S1	Jóvenes altamente productivos	32.4%	100.34	51.4%
 S2	Mujeres adultas productivas	20.2%	83.19	35.8%
