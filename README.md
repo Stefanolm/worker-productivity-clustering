@@ -18,6 +18,7 @@ Metodología:
 Preprocesamiento: imputación KNN de valores faltantes, transformación logarítmica de variables con alta dispersión (productividad, días trabajados, ingreso total) y estandarización Z.
 
 Selección del número de clusters: método del codo (evolución de la inercia intra-cluster) evaluando de 1 a 15 clusters.
+
 Modelo final: K-Means con k=4, n_init=20, random_state=123.
 
 Validación: comparación de K-Means contra Gaussian Mixture Model (GMM) usando Silhouette Score, Davies-Bouldin Score y Calinski-Harabasz Score.
@@ -26,6 +27,7 @@ Visualización: proyección de los clusters en 3 componentes principales (PCA) p
 
 
 Resultados del modelo:
+
 Métrica	K-Means	GMM
 Silhouette Score	0.1482	0.0383
 Davies-Bouldin	1.8740	4.2177
