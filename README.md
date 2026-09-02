@@ -1,5 +1,7 @@
 # worker-productivity-clustering
 
+# Segmentación de Trabajadores Agrícolas mediante Clustering
+
 Segmentación no supervisada de operarios de campo de una empresa agroexportadora (fundos en Piura), a partir de variables de productividad, comportamiento laboral y perfil sociodemográfico, con el objetivo de identificar perfiles de desempeño y apoyar decisiones de retención de personal.
 
 **Autor:** Stefano Giacomo Landa Morante — Universidad Nacional de Ingeniería (UNI)
